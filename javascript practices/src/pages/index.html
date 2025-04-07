@@ -47,17 +47,27 @@ Use const when you declare
 <h2>Javascript const!</h2>
 <p id="demo"></p>
 <script>
-    //Create an Array
-    const cars = ["Saab", "Volvo", "BMW"];
+    // //Create an Array
+    // const cars = ["Saab", "Volvo", "BMW"];
+    //
+    // //Change an element
+    // cars[0] ="Toyota";
+    //
+    // //Add an element
+    // cars.push("Mercedes");
+    //
+    // //Display the Array
+    // document.getElementById("demo").innerHTML = cars;
 
-    //Change an element
-    cars[0] ="Toyota";
+    //Constant Objects
+    const car = {type:"Ford", model:"Toyota",country:"Nigeria", color:"blue"};
 
-    //Add an element
-    cars.push("Mercedes");
-
-    //Display the Array
-    document.getElementById("demo").innerHTML = cars;
+    // you can change a property
+    car.color = "red";
+    // you can add a property
+    car.owner = "Abdullah";
+    //Display the property;
+    document.getElementById("demo").innerHTML = "Car owner is: " + car.owner;
 </script>
 
 
