@@ -18,10 +18,10 @@
 <!--</script>-->
 <!--<button onclick="window.print()">Print this page!</button>-->
 
-<p>javascript statements</p>
-<button onclick="myFunction()">Click Me!</button>
-<p id="demo1"></p>
-<p id="demo2"></p>
+<!--<p>javascript statements</p>-->
+<!--<button onclick="myFunction()">Click Me!</button>-->
+<!--<p id="demo1"></p>-->
+<!--<p id="demo2"></p>-->
 <!--<script>-->
 <!--    document.getElementById("demo").innerHTML = "Hello World!";-->
 <!--</script>-->
@@ -32,11 +32,32 @@
 <!--    c = a + b;-->
 <!--    document.getElementById("demo").innerHTML = c;-->
 <!--</script>-->
+<!--<script>-->
+<!--    function myFunction() {-->
+<!--        document.getElementById("demo1").innerHTML = "Hello World!";-->
+<!--        document.getElementById("demo2").innerHTML = "I am happy to learn Javascript!";-->
+<!--    }-->
+<!--</script>-->
+<!--Always declare a variable with const when you know that the value should not be changed!
+Use const when you declare
+1.A new Array
+2.A new Object
+3.A new Function
+4.A new RegExp-->
+<h2>Javascript const!</h2>
+<p id="demo"></p>
 <script>
-    function myFunction() {
-        document.getElementById("demo1").innerHTML = "Hello World!";
-        document.getElementById("demo2").innerHTML = "I am happy to learn Javascript!";
-    }
+    //Create an Array
+    const cars = ["Saab", "Volvo", "BMW"];
+
+    //Change an element
+    cars[0] ="Toyota";
+
+    //Add an element
+    cars.push("Mercedes");
+
+    //Display the Array
+    document.getElementById("demo").innerHTML = cars;
 </script>
 
 
